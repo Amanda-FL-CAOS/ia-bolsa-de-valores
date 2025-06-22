@@ -1,6 +1,8 @@
-# ia-bolsa-de-valores
-
 # 📈 Previsor de Cotações com LSTM (PyTorch)
+
+<p align="center">
+  <img src="https://github.com/Amanda-FL-CAOS/ia-bolsa-de-valores/blob/main/exemplo_gr%C3%A1fico.png" alt="exemplo de gráfico" width="700">
+</p>
 
 Este é um projeto em Python que utiliza redes neurais LSTM para prever a cotação do dia seguinte de ações da bolsa de valores brasileira (B3), com base em dados históricos fornecidos pela API do Yahoo Finance.
 
@@ -43,7 +45,7 @@ bash
 Copiar
 Editar
 pip install -r requirements.txt
-Se preferir, instale manualmente:
+Ou instale manualmente:
 
 bash
 Copiar
@@ -55,7 +57,7 @@ Copiar
 Editar
 python nome_do_arquivo.py
 🖼 Exemplo de Uso
-csharp
+text
 Copiar
 Editar
 ===== MENU =====
@@ -63,23 +65,23 @@ Editar
 [2] Sair
 Escolha uma opção: 1
 Digite o código da empresa (Ex: MGLU3.SA, PETR4.SA, VALE3.SA, ...): PETR4.SA
-Após o treinamento, será exibido um gráfico como este:
-![Gráfico de previsão](img\exemplo_gráfico.png")
-
-
-📊 Cotação real x Previsão da IA (nos últimos 5 anos)
+Após o treinamento, será exibido um gráfico parecido com o que está no topo do arquivo.
 
 📊 Modelo LSTM
-A rede neural é composta por:
+A rede neural utilizada contém:
 
 3 camadas LSTM empilhadas (hidden_size=150)
 
-1 camada densa totalmente conectada (Linear)
+1 camada totalmente conectada (Linear)
 
-Ela é treinada por 10 épocas com função de perda MSELoss e otimizador Adam.
+O modelo é treinado por 10 épocas usando:
+
+Função de perda: MSELoss
+
+Otimizador: Adam
 
 ⚠️ Aviso
-Este projeto tem fins educacionais e experimentais. Não é recomendado para uso em operações reais de investimento, pois não considera variáveis externas fundamentais, notícias, ou contexto de mercado.
+Este projeto tem fins educacionais e experimentais. Não é recomendado para uso em operações reais de investimento, pois não considera variáveis externas fundamentais, notícias ou contexto de mercado.
 
 📃 Licença
 Este projeto está licenciado sob a MIT License.
@@ -87,3 +89,5 @@ Este projeto está licenciado sob a MIT License.
 🙋‍♀️ Contribuindo
 Contribuições são bem-vindas! Sinta-se livre para abrir uma issue ou enviar um pull request com melhorias ou sugestões.
 
+✨ Autor(a)
+Desenvolvido com 💻 e 📈 por Amanda Fernandes.
