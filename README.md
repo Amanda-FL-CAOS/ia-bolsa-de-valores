@@ -40,26 +40,31 @@ O projeto utiliza:
 ```bash
 git clone https://github.com/Amanda-FL-CAOS/ia-bolsa-de-valores.git
 cd ia-bolsa-de-valores
+
+```
 2. Instale as dependências
-bash
+```bash
 Copiar
 Editar
 pip install -r requirements.txt
+```
 Ou instale manualmente:
 
-bash
+```bash
 Copiar
 Editar
 pip install pandas numpy matplotlib mplcyberpunk scikit-learn torch yfinance
+```
+
 3. Execute o programa
-bash
+```bash
 Copiar
 Editar
 python nome_do_arquivo.py
-🖼 Exemplo de Uso
-text
-Copiar
-Editar
+```
+
+## Exemplo de Uso
+
 ===== MENU =====
 [1] Prever cotação de uma empresa
 [2] Sair
@@ -67,27 +72,22 @@ Escolha uma opção: 1
 Digite o código da empresa (Ex: MGLU3.SA, PETR4.SA, VALE3.SA, ...): PETR4.SA
 Após o treinamento, será exibido um gráfico parecido com o que está no topo do arquivo.
 
-📊 Modelo LSTM
-A rede neural utilizada contém:
+## 📊 Modelo LSTM
+- A rede neural utilizada contém:
+- 3 camadas LSTM empilhadas (hidden_size=150)
+- 1 camada totalmente conectada (Linear)
+- O modelo é treinado por 10 épocas usando:
+- Função de perda: MSELoss
+- Otimizador: Adam
 
-3 camadas LSTM empilhadas (hidden_size=150)
-
-1 camada totalmente conectada (Linear)
-
-O modelo é treinado por 10 épocas usando:
-
-Função de perda: MSELoss
-
-Otimizador: Adam
-
-⚠️ Aviso
+## ⚠️ Aviso
 Este projeto tem fins educacionais e experimentais. Não é recomendado para uso em operações reais de investimento, pois não considera variáveis externas fundamentais, notícias ou contexto de mercado.
 
-📃 Licença
+## 📃 Licença
 Este projeto está licenciado sob a MIT License.
 
-🙋‍♀️ Contribuindo
+## 🙋‍♀️ Contribuindo
 Contribuições são bem-vindas! Sinta-se livre para abrir uma issue ou enviar um pull request com melhorias ou sugestões.
 
-✨ Autor(a)
+## ✨ Autor(a)
 Desenvolvido com 💻 e 📈 por Amanda Fernandes.
