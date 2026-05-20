@@ -38,8 +38,8 @@ O projeto utiliza:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seuusuario/nome-do-repositorio.git
-cd nome-do-repositorio
+git clone https://github.com/Amanda-FL-CAOS/ia-bolsa-de-valores.git
+cd ia-bolsa-de-valores
 2. Instale as dependências
 bash
 Copiar
